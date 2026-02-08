@@ -4,7 +4,8 @@ int main( ){
     int n;
     cout<< "Enter  num :";
     cin>>n;
-    for(int i =n; i<=100; i++){
-            cout<<i<<endl;
+    for(int i =1; i<=n; i++){
+            cout<<i<< endl;
         }
+        return 0;
     }
