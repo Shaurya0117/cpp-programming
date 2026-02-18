@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 void greet(){
-    cout<<"hey how are you";
+    cout<<"hey how are you"<<endl;
     return ;
     
 }
 void india(){
-    cout<<"india is my country";
+    cout<<"india is my country"<<endl;
     return ;
 }
 
@@ -15,7 +15,6 @@ int main(){
     greet();
     cout<<endl<<"i am fine"<<endl;
     india();
-    cout<<endl;
     greet();
     return 0;
 }
