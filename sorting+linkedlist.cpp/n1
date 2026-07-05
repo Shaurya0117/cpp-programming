@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+int main(){
+    Node* newNode = new Node(10,NULL);
+    Node* newNode = new Node(20,NULL);
+     Node* newNode = new Node(40,NULL);
+
+}
+head->data = value;
+second->data = value;
+// new node (insert 30 at middle)
+     Node* newNode = new Node(30,NULL);
+
+     node*temp =head;
+     
+
+
+     temp = head;
+    while (temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+    
+
+
+
+
+
+
+

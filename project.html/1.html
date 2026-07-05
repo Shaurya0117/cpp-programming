@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif; */
+    }
+
+    body{
+      background:#f3f3f3;
+    }
+
+    /* Navbar */
+
+    .navbar{
+       background:#131921;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:15px 20px; */
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#ff9900;
+    }
+
+    .search-box{
+      width:50%;
+      display:flex;
+    }
+
+    .search-box input{
+      width:100%;
+      padding:10px;
+      border:none;
+      outline:none;
+    }
+
+    .search-box button{
+      padding:10px 15px;
+      background:#febd69;
+      border:none;
+      cursor:pointer;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:20px;
+      font-size:14px;
+    }
+
+    /* Hero Section */
+
+    .hero{
+      background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200')
+      center/cover no-repeat;
+
+      height:350px;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      color:white;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    /* Products */
+
+    .products{
+      padding:30px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:10px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:8px;
+    }
+
+    .card h3{
+      margin:10px 0;
+    }
+
+    .price{
+      color:green;
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      padding:10px 15px;
+      border:none;
+      background:#ff9900;
+      cursor:pointer;
+      border-radius:5px;
+      font-weight:bold;
+    }
+
+    /* Footer */
+
+    footer{
+      background:#131921;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <div class="navbar">
+
+    <div class="logo">amazon</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products">
+      <button>Search</button>
+    </div>
+
+    <div class="nav-links">
+      <div>Hello, Sign in</div>
+      <div>Returns & Orders</div>
+      <div>Cart 🛒</div>
+    </div>
+
+  </div>
+
+  <!-- Hero Section -->
+
+  <div class="hero">
+    Welcome to Amazon Clone
+  </div>
+
+  <!-- Products -->
+
+  <section class="products">
+
+    <div class="card">
+      <img src="https://picsum.photos/300/300?1">
+      <h3>Wireless Headphones</h3>
+      <div class="price">₹1,999</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/300?2">
+      <h3>Smart Watch</h3>
+      <div class="price">₹2,499</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/300?3">
+      <h3>Gaming Mouse</h3>
+      <div class="price">₹899</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/300?4">
+      <h3>Bluetooth Speaker</h3>
+      <div class="price">₹1,499</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    © 2026 Amazon Clone | Made by Shaurya
+  </footer>
+
+</body>
+</html>

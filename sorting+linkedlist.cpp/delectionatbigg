@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int value) {
+        data = value;
+        next = NULL;
+    }
+};
+
+int main() {
+    // Creation
+    Node* head = new Node();
+    head->data = 10;
+    head->next = new Node();
+    head->data = 20;
+    head->next->next = new Node();
+    head->data = 30;
+    head->next->next->next = NULL;
+
+   // Deletion 
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+
+
+    }
+

@@ -1,0 +1,58 @@
+class node *itr *new;
+new -> data = '40'
+ptr = head;
+while(ptr -> data! =x && ptr! = NULL)
+ptr = ptr -> next;
+{itr,,data ==x}
+new ->next = ptr-> 
+
+
+
+class node* ptr = new;
+new -> data = '40'
+ptr = head;
+    
+    while (ptr != NULL && ptr->data != x) {
+        ptr = ptr->next;
+    }
+
+    newNode->next = ptr->next;
+    ptr->next = newNode
+
+
+
+
+
+
+#include <bits/stdc++.h>
+ using namespace std;
+class Node{
+     public:
+ int data;
+  Node*next;
+Node(int value)
+  {
+     data=value;
+      next=NULL;
+  }
+ };
+ int main() {
+ 	// your code goes here
+ 	Node*head=new Node(10);
+ 	Node*second=new Node(20);
+ 	Node*third=new Node(30);
+ 	head->next=second;
+ 	second->next=third;
+ 	int x;
+ 	cin>>x;
+ 	Node*temp=head;
+ 	while(temp->data!=x && temp->next!=NULL)
+ 	{
+ 	    temp=temp->next;
+ 	}
+if(temp->data==x)
+ 	{
+ 	    Node*n1=new Node(40);
+ 	    n1->next=temp->next;
+ 	    temp->next=n1; 	}
+
