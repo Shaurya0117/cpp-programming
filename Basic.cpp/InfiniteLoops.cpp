@@ -8,5 +8,5 @@ int main() {
     for (;;) {
         cout << "This loop will run forever.\n";
     }
-	return 0;
+	return 0
 }
