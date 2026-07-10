@@ -1,14 +1,12 @@
-//Print the table of 'n'. Here 'n' is a integer which user will input.
+//Print the table of '19'. Here 'n' is a integer which user will input.
 
 #include <iostream>
 using namespace std;
 
-int main(){
-    int n;
-    cout<<"Enter the number n : ";
-    cin>>n;
-    for(int i = n; i<=10;i++){
-        cout<<i*n<<endl;
+int main() {
+    for (int i = 19; i <= 190; i += 19) {
+        cout << i << endl;
     }
+
     return 0;
 }
