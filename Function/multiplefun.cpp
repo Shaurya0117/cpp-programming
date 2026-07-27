@@ -8,6 +8,7 @@ void greet(){
 void india(){
     cout<<"india is my country"<<endl;
     return ;
+    cout<<"Buddy";
 }
 
 

@@ -1,39 +1,30 @@
-/*Design a program to convert a procedural implementation of a student record system
-into an object oriented approach using classes and objects. */
-
-
 #include <iostream>
 #include <string>
 using namespace std;
 
-class Student {
-private:
-    int rollNo;
+class b
+ {
+    public:
+    int roll;
+    int mark;
     string name;
-    float marks;
 
-public:
-    void display() {
-        cout << "Enter Roll Number: ";
-        cin >> rollNo;
-
-        cout << "Enter Name: ";
-        cin >> name;
-
-        cout << "Enter Marks: ";
-        cin >> marks;
-
-        cout << "\nStudent Details\n";
-        cout << "Roll Number: " << rollNo << endl;
-        cout << "Name: " << name << endl;
-        cout << "Marks: " << marks << endl;
+    void display(){
+        cout<<"Name : "<< name <<endl;
+        cout<<"Roll : "<< roll <<endl;
+        cout<<"Mark : "<< mark <<endl;
+        
     }
 };
 
-int main() {
-    Student obj;
+int main(){
+    b b1;
+    b1.name = "Shaurya";
+    b1.roll = 45;
+    b1.mark = 67;
 
-    obj.display();
+    b1.display();
 
     return 0;
+
 }
