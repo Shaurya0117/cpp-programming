@@ -1,0 +1,154 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    int roll;
+    string name;
+    string branch;
+    float marks;
+
+public:
+    void addStudent() {
+        cout << "\nEnter Roll Number: ";
+        cin >> roll;
+
+        cout << "Enter Name: ";
+        cin >> name;
+
+        cout << "Enter Branch: ";
+        cin >> branch;
+
+        cout << "Enter Marks: ";
+        cin >> marks;
+    }
+
+    void displayStudent() {
+        cout << "\n----------------------------";
+        cout << "\nRoll Number : " << roll;
+        cout << "\nName        : " << name;
+        cout << "\nBranch      : " << branch;
+        cout << "\nMarks       : " << marks;
+        cout << "\n----------------------------\n";
+    }
+
+    int getRoll() {
+        return roll;
+    }
+
+    void updateStudent() {
+        cout << "\nEnter New Name: ";
+        cin >> name;
+
+        cout << "Enter New Branch: ";
+        cin >> branch;
+
+        cout << "Enter New Marks: ";
+        cin >> marks;
+
+        cout << "\nRecord Updated Successfully!\n";
+    }
+};
+
+int main() {
+    Student s[100];
+    int count = 0;
+    int choice;
+    int searchRoll;
+    bool found;
+
+    do {
+        cout << "\n========== STUDENT MANAGEMENT SYSTEM ==========\n";
+        cout << "1. Add Student\n";
+        cout << "2. Display All Students\n";
+        cout << "3. Search Student\n";
+        cout << "4. Update Student\n";
+        cout << "5. Exit\n";
+        cout << "Enter Choice: ";
+        cin >> choice;
+
+        switch (choice) {
+
+        case 1:
+            if (count < 100) {
+                s[count].addStudent();
+                count++;
+                cout << "\nStudent Added Successfully!\n";
+            } else {
+                cout << "\nDatabase Full!\n";
+            }
+            break;
+
+        case 2:
+            if (count == 0) {
+                cout << "\nNo Student Records Found.\n";
+            } else {
+                for (int i = 0; i < count; i++) {
+                    s[i].displayStudent();
+                }
+            }
+            break;
+
+        case 3:
+            if (count == 0) {
+                cout << "\nNo Records Available.\n";
+                break;
+            }
+
+            cout << "\nEnter Roll Number to Search: ";
+            cin >> searchRoll;
+
+            found = false;
+
+            for (int i = 0; i < count; i++) {
+                if (s[i].getRoll() == searchRoll) {
+                    s[i].displayStudent();
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                cout << "\nStudent Not Found!\n";
+            }
+
+            break;
+
+        case 4:
+            if (count == 0) {
+                cout << "\nNo Records Available.\n";
+                break;
+            }
+
+            cout << "\nEnter Roll Number to Update: ";
+            cin >> searchRoll;
+
+            found = false;
+
+            for (int i = 0; i < count; i++) {
+                if (s[i].getRoll() == searchRoll) {
+                    s[i].updateStudent();
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                cout << "\nStudent Not Found!\n";
+            }
+
+            break;
+
+        case 5:
+            cout << "\nThank You for Using the Program!\n";
+            break;
+
+        default:
+            cout << "\nInvalid Choice! Try Again.\n";
+        }
+
+    } while (choice != 5);
+
+    return 0;
+}
