@@ -5,9 +5,9 @@ int main(){
     int x[] = {1,2,3,4,5};
 
     
-    cout<< sizeof(x)/4;
+    cout<< sizeof(x)/4 << endl;
     
-    cout<<siz
+    cout<<sizeof(x)/sizeof(x[0]);
     
     return 0;
        
