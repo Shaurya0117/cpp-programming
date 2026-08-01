@@ -5,9 +5,13 @@ int main(){
     // 5 integer -> 1,2,3,4,5
     int x[5] = {1,2,3,4,5};
 
-    cout<< x[2];
-    cout<< &x[3];   //SIZE
+    int sum =0;
+
+    for(int i=0; i<5;i++){
+        cin>> x[i];
+        sum +=  x[i];
+    }
     
-    return 0;
-       
+    cout<<sum;
+
 }
